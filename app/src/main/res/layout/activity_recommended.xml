@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/basic"
+    tools:context="com.example.android.musicalui.Recommended">
+
+    <ScrollView
+        android:id="@+id/exp1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            style="@style/notes"
+            android:text="@string/recommended" />
+    </ScrollView>
+
+    <ScrollView
+        style="@style/basic"
+        android:layout_below="@+id/exp1">
+
+        <LinearLayout
+            style="@style/basic"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/new_songs"
+                style="@style/basic1"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/new_releases"
+                  style="@style/titles"
+                    android:text="New Releases"
+               />
+
+                <View
+                    android:id="@+id/separator"
+                    style="@style/separators"
+                    android:layout_below="@id/new_releases"
+                   />
+
+                <HorizontalScrollView
+                    android:id="@+id/row1"
+                    style="@style/horizontal_row1"
+                    android:layout_below="@+id/separator"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    >
+
+                    <LinearLayout
+                       style="@style/basic"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/queen_forever" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/queen_2" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/recommendations"
+                style="@style/basic1"
+                android:layout_below="@id/new_songs"
+                android:layout_margin="8dp">
+
+                <TextView
+                    android:id="@+id/recommend_tv"
+                    style="@style/titles"
+                    android:text="Recommended for you"
+                    />
+
+                <View
+                    android:id="@+id/separator2"
+                    style="@style/separators"
+                    android:layout_below="@id/recommend_tv"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/row2"
+                    style="@style/horizontal_row1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/separator2">
+
+                    <LinearLayout
+                        style="@style/basic1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/queen_2" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/queen_forever" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+
+                        <ImageView
+                            style="@style/song_icon"
+                            android:src="@drawable/song" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    style="@style/basic">
+    <!-- The main content view -->
+    <RelativeLayout
+        style="@style/basic"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            style="@style/basic">
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!--Second child layout-->
+    <ListView
+        android:id="@+id/left_drawer"
+        style="@style/drawers"
+        android:layout_gravity="left|start"
+        android:fitsSystemWindows="true" />
+
+    <ListView
+        android:id="@+id/right_drawer"
+        style="@style/drawers"
+        android:layout_gravity="right|end" />
+</android.support.v4.widget.DrawerLayout>

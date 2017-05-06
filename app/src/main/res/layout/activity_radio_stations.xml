@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/basic"
+    android:orientation="vertical"
+    tools:context="com.example.android.musicalui.RadioStations">
+
+    <LinearLayout
+        style="@style/basic1"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100">
+
+            <TextView
+                android:id="@+id/exp_radio"
+                style="@style/notes"
+                android:text="@string/radio_note" />
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/fav_radios"
+            style="@style/basic1"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/saved_stations"
+                style="@style/titles"
+                android:text="Saved Stations" />
+
+            <View
+                android:id="@+id/separator1"
+                style="@style/separators"
+                android:layout_below="@id/saved_stations"
+
+                />
+
+            <TextView
+                android:id="@+id/favorite_stations"
+                android:layout_below="@+id/separator1"
+                style="@style/notification"
+                android:text="@string/radio_notification" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/local_radios"
+            style="@style/basic1">
+
+
+            <TextView
+                android:id="@+id/local_stations"
+                style="@style/titles"
+                android:text="Local Stations" />
+
+            <View
+                android:id="@+id/separator"
+                style="@style/separators"
+                android:layout_below="@id/local_stations" />
+
+            <GridView
+                android:id="@+id/gridview_radio"
+                style="@style/gridview_radio"
+                android:layout_below="@+id/separator" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

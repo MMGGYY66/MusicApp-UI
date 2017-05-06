@@ -1,0 +1,6 @@
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@android:id/text1"
+       style="@style/drawer_list_item"
+        android:textAppearance="?android:attr/textAppearanceListItemSmall"
+        android:background="?android:attr/activatedBackgroundIndicator"
+        android:minHeight="?android:attr/listPreferredItemHeightSmall"/>

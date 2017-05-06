@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="primary_color">#4A312A</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="primary_dark_color">#2F1D1A</color>
+
+    <!-- Background color for app -->
+    <color name="white">#ffffff</color>
+    <color name="tan_background">#FFF7DA</color>
+    <color name="darth_vader_grey">#111111</color>
+
+    <!-- Background color for app -->
+    <color name="black">#000000</color>
+
+    <!-- Background color for app -->
+    <color name="dark_grey">#212121</color>
+    <color name="light_grey">#706e6e</color>
+    <color name="purple_light">#AA00FF</color>
+    <color name="purple_dark">#7B1FA2</color>
+
+
+    <!-- Background color for the phrases category -->
+    <color name="library">#fcf122</color>
+
+    <!-- Background color for the numbers category -->
+    <color name="all_songs">#FD8E09</color>
+
+    <!-- Background color for the colors category -->
+    <color name="favorites">#f70e92</color>
+
+    <!-- Background color for the colors category -->
+    <color name="playlists">#8800A0</color>
+
+    <!-- Background color for the phrases category -->
+    <color name="radio">#16AFCA</color>
+
+    <!-- Background color for the family members category -->
+    <color name="playing">#1cb41c</color>
+</resources>

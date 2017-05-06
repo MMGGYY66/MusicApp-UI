@@ -1,0 +1,178 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/purple_light</item>
+        <item name="colorPrimaryDark">@color/purple_dark</item>
+    </style>
+
+    <!-- Style for a category of vocabulary words -->
+    <style name="CategoryStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <style name="basic">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="basic1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="basic2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="song_icon" parent="basic2">
+        <item name="android:layout_marginRight">@dimen/dp_5</item>
+        <item name="android:contentDescription">@string/mp3</item>
+    </style>
+
+    <style name="drawers">
+        <item name="android:layout_width">@dimen/dp_240</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:choiceMode">singleChoice</item>
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">@dimen/zero</item>
+        <item name="android:background">@color/darth_vader_grey</item>
+    </style>
+
+    <style name="drawer_list_item" parent="basic1">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="notes" parent="basic1">
+        <item name="android:layout_margin">@dimen/pad_8</item>
+        <item name="android:background">@color/tan_background</item>
+        <item name="android:lineSpacingExtra">@dimen/pad_4</item>
+        <item name="android:padding">@dimen/pad_8</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/sp_18</item>
+    </style>
+
+    <style name="titles" parent="basic1">
+        <item name="android:padding">@dimen/pad_8</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="separators">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_2</item>
+        <item name="android:layout_marginLeft">@dimen/pad_8</item>
+        <item name="android:layout_marginRight">@dimen/pad_8</item>
+        <item name="android:background">@color/light_grey</item>
+    </style>
+
+    <style name="horizontal_row1">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/dp_116</item>
+        <item name="android:layout_margin">@dimen/pad_8</item>
+    </style>
+
+    <!---Songs displayed in ListView-->
+    <style name="song_item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dp_80</item>
+        <item name="android:layout_margin">@dimen/pad_8</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="song_img">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:src">@drawable/song</item>
+        <item name="android:layout_margin">4dp</item>
+    </style>
+
+    <style name="song_data_ll">
+        <item name="android:layout_width">@dimen/zero</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">@dimen/int_5</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/pad_8</item>
+    </style>
+
+    <style name="song_title" parent="basic1">
+        <item name="android:maxLines">@dimen/int_1</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+
+
+    <style name="song_artist" parent="basic1">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/light_grey</item>
+    </style>
+
+    <style name="create_playlist" parent="basic1">
+        <item name="android:layout_width">@dimen/dp_395</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:drawableLeft">@drawable/add</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:text">@string/create_playlist</item>
+    </style>
+
+    <style name="gridview" parent="basic1">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/pad_8</item>
+        <item name="android:numColumns">auto_fit</item>
+        <item name="android:verticalSpacing">@dimen/dp_15</item>
+        <item name="android:horizontalSpacing">@dimen/dp_10</item>
+        <item name="android:stretchMode">columnWidth</item>
+    </style>
+
+    <style name="gridview_playlist" parent="gridview">
+        <item name="android:columnWidth">@dimen/dp_150</item>
+    </style>
+
+    <style name="gridview_radio" parent="gridview">
+        <item name="android:columnWidth">@dimen/dp_90</item>
+    </style>
+
+    <style name="notification" parent="basic1">
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_margin">@dimen/pad_8</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/dp_25</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/sp_24</item>
+
+    </style>
+
+    <style name="star_img" parent="basic2">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_margin">@dimen/dp_50</item>
+        <item name="android:src">@drawable/star</item>
+
+    </style>
+
+    <style name="instructions" parent="basic1">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/dp_25</item>
+        <item name="android:paddingRight">@dimen/dp_25</item>
+        <item name="android:textColor">@color/light_grey</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+
+</resources>

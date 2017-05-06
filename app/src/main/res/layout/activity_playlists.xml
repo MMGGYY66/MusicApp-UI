@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/basic"
+    tools:context="com.example.android.musicalui.Playlists">
+    <ScrollView
+        android:id="@+id/exp2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_100">
+
+        <TextView
+            style="@style/notes"
+            android:text="@string/playlist_note"/>
+    </ScrollView>
+    <TextView
+        android:id="@+id/playlists"
+        style="@style/create_playlist"
+        android:layout_below="@+id/exp2"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <GridView
+        android:id="@+id/gridview_playlists"
+        android:layout_below="@+id/playlists"
+        style="@style/gridview_playlist"/>
+
+</RelativeLayout>

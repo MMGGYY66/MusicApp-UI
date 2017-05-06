@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/play_all"
+        android:icon="@drawable/pla_ico"
+        android:orderInCategory="1"
+        android:title="Play All"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_end"
+        android:icon="@drawable/end"
+        android:orderInCategory="2"
+        android:title="End"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/like"
+        android:icon="@drawable/heart_icon"
+        android:orderInCategory="3"
+        android:title="Like"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_shuffle"
+        android:icon="@drawable/shuffle"
+        android:title="Shuffle"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/file_search"
+        android:icon="@drawable/loop"
+        android:title="Search file"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/equalizer"
+        android:icon="@drawable/settings"
+        android:title="Equalizer"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/youtube"
+        android:icon="@drawable/youtube"
+        android:title="Youtube"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_websearch"
+        android:icon="@drawable/web"
+        android:title="Web"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Music App UI</string>
+    <string name="library">Library</string>
+    <string name="favorites">Favorites</string>
+    <string name="all_songs">All Songs</string>
+    <string name="playlists">Playlists</string>
+    <string name="radio">Radio</string>
+    <string name="playing">Now Playing</string>
+
+    <string-array name="menu_array">
+        <item>Recommended</item>
+        <item>Library</item>
+        <item>Favorites</item>
+        <item>Playlists</item>
+        <item>Radio</item>
+    </string-array>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>
+
+    <string name="recommended"><big><b>Scroll for more &#8230;</b> </big>\n This is the default activity for when the app opens and it contains listening recommendations
+        based on the user\'s favorite genres/artists and the latest releases.
+        When clicking on Youtube icon, the youtube app should open and search for the title of the now playing song.
+       The like icon should add the now_playing song to favorites.
+         The rest of the actions in the overflow menu should be self-explanatory.
+        The functionality has not been completely implemented.
+       The songs in the categories should actually be in a horizontal list view and dynamically loaded
+      (maybe with a RecyclerView which I should learn to implement)
+         onClick the song should start playing without changing the activity
+       At that point the play button should change to pause button.
+        Btw, the youtube and the web actions in the overflow menu are functional. However, I don\'t know how to fix the delay of the overflow
+        menu tuning invisible when the navigation drawer is open.
+    </string>
+    <string name="lib_note"><big><b>Scroll for more &#8230;</b> </big>\n In this Activity the user will see al his/her songs in alphabetical order.
+        In the upper part there will be the box with the playing song/last played song if the app has just been launched.
+        I know that I didn\'t need to implement any functionality, but I couldn\'t resist the temptation, so I followed a small tutorial
+        to implement some functionality: if you allow the app to have access to your media, your songs should appear in this activity.
+        On touch the song starts playing. I still have some issues like I didn\'t manage to implement the AudioManager.OnAudioFocusChangeListener.
+        Also, if you change the activity, the song stops playing.
+    </string>
+    <string name="radio_note">Here you can find the local stations and there is a section for favorite radios. The activity has no real
+        functionality, except that when you tap on a button in the radio grid you get a toast message. The radio activity is special in that the
+        \"Now Playing\" box (available while browsing all library related activities) will close and the playing song will stop.
+    </string>
+    <string name="playlist_note"><big><b>Scroll for more &#8230;</b> </big>\n In this Activity the user choose the playlist he wants to
+        listen to. There is also an option to create a new playlist. Clicking the \"Create Playlist\" option should take the user to the library
+        from where he/she can add songs. There is no functionality to this Activity.
+    </string>
+    <string name="select_favs">To add your favorite songs, touch and hold the song that you want to add and tap the star icon.
+    </string>
+    <string name="favorites_note"><big><b>Scroll for more &#8230;</b> </big>\n This activity will display in ListView the favorite songs of the user. Basically the user has to go
+        to Library to select favorite songs. Honding on a song should open a special overflow menu (not built yet) with special options
+        common to all songs such as add to favorites, delete, play, share, set as ringtone etc. As a sidenote, if a song is playing a
+        special box will display on all songs related activities the \"Now Playing\" box showing the title of the song and a play/pause button.
+    </string>
+
+
+    <string name="playing_title">Princess of the Universe</string>
+    <string name="playing_artist">Queen</string>
+    <string name="mp3">.mp3</string>
+    <string name="create_playlist">Create Playlist</string>
+    <string name="radio_notification">You have no saved stations.</string>
+
+
+</resources>
